@@ -65,7 +65,7 @@ namespace poc.Controllers
 
                 await HttpContext.SignInAsync(principal, props);
 
-                Redirect("/");
+                return Redirect("/Veiculos");
             }
             else
             {
